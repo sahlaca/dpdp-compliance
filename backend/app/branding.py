@@ -96,14 +96,13 @@ def render_report_cover(
     company: str,
     sector: str,
     generated: str,
-    assessment_label: str,
     *,
     include_logo: bool = True,
 ) -> str:
     logo = cover_logo_block() if include_logo else ""
     return f"""<div class="cover">
     {logo}
-    <p class="cover-eyebrow">DPDP Act 2023 · Rules 2025 · {escape(assessment_label)}</p>
+    <p class="cover-eyebrow">DPDP Act 2023 · Rules 2025</p>
     <h1>Compliance Gap Report</h1>
     <p class="cover-meta">
       <strong>{company}</strong><br/>

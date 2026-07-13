@@ -23,7 +23,7 @@ router = APIRouter()
 
 def _safe_filename(company_name: str, ext: str) -> str:
     safe = "".join(c if c.isalnum() or c in "-_" else "_" for c in company_name)[:40]
-    return f"DPDP_Legal_Gap_Report_{safe}.{ext}"
+    return f"DPDP_Compliance_Gap_Report_{safe}.{ext}"
 
 
 def _persist_report(db: Session, user: User, submission: QuestionnaireSubmission, report: dict) -> None:
@@ -109,7 +109,7 @@ def render_report_html(
 ) -> HTMLResponse:
     assessment_type = report.get("assessment_type", "legal")
     if assessment_type != "legal":
-        raise HTTPException(status_code=400, detail="Not a legal assessment report")
+        raise HTTPException(status_code=400, detail="Not a DPDP compliance assessment report")
     fragment = (
         f"<style>{_report_styles(for_pdf=False)}</style>"
         f"{render_legal_report_body(report, base_url='', for_pdf=False)}"

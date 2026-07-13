@@ -1,4 +1,4 @@
-# Frontend — DPDP Phase 1
+# Frontend — DPDP Compliance Assessment
 
 React + Vite questionnaire wizard that calls the Python backend API.
 

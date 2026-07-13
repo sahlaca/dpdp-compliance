@@ -555,7 +555,7 @@ def render_legal_report_body(
 
     return f"""
   <div class="legal-report-body">
-  {render_report_cover(company, sector, generated, "Legal Assessment", include_logo=for_pdf)}
+  {render_report_cover(company, sector, generated, include_logo=for_pdf)}
 
   <h2 class="section-title">Executive Summary</h2>
   <div class="prose">{_paragraphs(_legal_executive_overview(report))}</div>

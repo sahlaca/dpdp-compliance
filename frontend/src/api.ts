@@ -1,13 +1,6 @@
 import type { AuthUser } from "./auth";
 import { authHeaders } from "./auth";
-import type {
-  GapReport,
-  LegalSource,
-  QuestionnaireResponse,
-  SourcesCatalog,
-  TechnicalQuestionnaireResponse,
-  TechnicalReport,
-} from "./types";
+import type { GapReport, LegalSource, QuestionnaireResponse, SourcesCatalog } from "./types";
 
 const API_BASE = import.meta.env.VITE_API_URL ?? "";
 
@@ -132,9 +125,9 @@ export interface ReportHistoryItem {
   id: number;
   company_name: string;
   sector: string;
-  assessment_type: "legal" | "technical";
+  assessment_type: string;
   generated_at: string;
-  summary: GapReport["summary"] | TechnicalReport["summary"];
+  summary: GapReport["summary"];
 }
 
 export async function fetchReportHistory(): Promise<ReportHistoryItem[]> {
@@ -142,46 +135,9 @@ export async function fetchReportHistory(): Promise<ReportHistoryItem[]> {
   return res.json();
 }
 
-export async function fetchSavedReport(id: number): Promise<GapReport | TechnicalReport> {
+export async function fetchSavedReport(id: number): Promise<GapReport> {
   const res = await apiFetch(`/api/v1/auth/reports/${id}`);
   return res.json();
-}
-
-export async function fetchTechnicalQuestionnaire(): Promise<TechnicalQuestionnaireResponse> {
-  const res = await apiFetch("/api/v1/technical/questionnaire");
-  return res.json();
-}
-
-export async function generateTechnicalReport(payload: {
-  company_name: string;
-  sector: string;
-  answers: Record<string, string>;
-}): Promise<TechnicalReport> {
-  const res = await apiFetch("/api/v1/technical/reports/generate", {
-    method: "POST",
-    body: JSON.stringify(payload),
-  });
-  return res.json();
-}
-
-export async function downloadTechnicalReport(payload: {
-  company_name: string;
-  sector: string;
-  answers: Record<string, string>;
-}): Promise<Blob> {
-  const res = await apiFetch("/api/v1/technical/reports/download", {
-    method: "POST",
-    body: JSON.stringify(payload),
-  });
-  return res.blob();
-}
-
-export async function renderTechnicalReportHtml(report: TechnicalReport): Promise<string> {
-  const res = await apiFetch("/api/v1/technical/reports/render-html", {
-    method: "POST",
-    body: JSON.stringify(report),
-  });
-  return res.text();
 }
 
 export type { LegalSource };

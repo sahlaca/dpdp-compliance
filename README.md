@@ -1,4 +1,4 @@
-# DPDP Phase 1 — Compliance Guidance Generator
+# DPDP Compliance Assessment
 
 Questionnaire-driven app that produces personalized DPDP compliance gap reports for organizations subject to India's DPDP Act 2023 and Rules 2025.
 
@@ -7,7 +7,7 @@ Questionnaire-driven app that produces personalized DPDP compliance gap reports 
 ## Structure
 
 ```
-dpdp-phase1/
+dpdp-compliance/
 ├── backend/     # Python FastAPI API, rules engine, RAG, report generation
 ├── frontend/    # React + Vite web UI (questionnaire wizard + report view)
 └── docs/        # Planning and specification documents
@@ -47,7 +47,7 @@ npm run dev
 
 App: http://localhost:5173
 
-## Phase 1 scope
+## Scope
 
 - Structured questionnaire about data practices (33 questions, 39 obligations)
 - Deterministic obligation scoring (met / partial / not met)
@@ -55,7 +55,7 @@ App: http://localhost:5173
 - Per-obligation citations with downloadable source PDFs for instant verification
 - Prioritized action plan (Nov 2026 / May 2027 deadlines)
 
-**Out of scope for v1:** consent management, document drafting, system integrations.
+**Out of scope for v1:** consent management, document drafting, system integrations, technical infrastructure assessment.
 
 ## Disclaimer
 
