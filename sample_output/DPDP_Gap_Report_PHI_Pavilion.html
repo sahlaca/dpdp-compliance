@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DPDP Compliance Gap Report — PHI Pavilion</title>
+  <style>
+    @media print {
+      body { margin: 0; }
+      .no-print { display: none; }
+      .page-break { page-break-before: always; }
+    }
+    body { font-family: Georgia, 'Times New Roman', serif; max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; color: #1a1a2e; line-height: 1.6; }
+    h1 { font-size: 1.6rem; border-bottom: 2px solid #1a5fb4; padding-bottom: 0.5rem; }
+    h2.category { font-size: 1.1rem; color: #1a5fb4; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+    .meta { color: #555; font-size: 0.9rem; }
+    .summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .stat { background: #f4f6f8; padding: 1rem; border-radius: 8px; text-align: center; }
+    .stat-value { font-size: 1.8rem; font-weight: bold; display: block; }
+    .stat-label { font-size: 0.8rem; color: #666; }
+    .obligation { border-left: 4px solid #ccc; padding: 0.75rem 0 0.75rem 1rem; margin: 1rem 0; }
+    .ob-header { display: flex; justify-content: space-between; align-items: flex-start; }
+    .ob-header h3 { margin: 0; font-size: 1rem; }
+    .badge { color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; white-space: nowrap; }
+    .refs { font-size: 0.85rem; color: #666; }
+    blockquote { margin: 0.5rem 0; padding: 0.5rem 0.75rem; background: #f8f9fa; border-left: 3px solid #1a5fb4; font-size: 0.9rem; }
+    blockquote p { margin: 0 0 0.25rem; font-style: italic; }
+    .disclaimer { font-size: 0.85rem; color: #666; font-style: italic; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+    ul { padding-left: 1.25rem; }
+    a { color: #1a5fb4; }
+    .no-print { background: #e3f2fd; padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1.5rem; font-family: system-ui, sans-serif; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <p class="no-print">To save as PDF: use your browser's <strong>Print → Save as PDF</strong>.</p>
+
+  <h1>DPDP Compliance Gap Report</h1>
+  <p class="meta"><strong>PHI Pavilion</strong> · Sector: hospitality<br/>Generated: 2026-07-02T09:12:28.989902+00:00</p>
+
+  <div class="summary">
+    <div class="stat"><span class="stat-value">39</span><span class="stat-label">Obligations assessed</span></div>
+    <div class="stat"><span class="stat-value">20</span><span class="stat-label">Gaps found</span></div>
+    <div class="stat"><span class="stat-value" style="color:#b00020">19</span><span class="stat-label">Critical gaps</span></div>
+  </div>
+
+  <h2>Regulatory timeline</h2>
+  <ul><li><strong>Phase I</strong> — 2025-11-13: Data Protection Board of India established</li><li><strong>Phase II</strong> — 2026-11-13: Consent Manager provisions become effective</li><li><strong>Phase III</strong> — 2027-05-13: All other substantive compliance obligations become effective</li></ul>
+
+  <h2>Prioritized action plan</h2>
+  <h3>Before Nov 13, 2026 (2026-11-13)</h3><ul><li>Review Consent Manager provisions and whether registration applies to your use case</li><li>Assess and update vendor / Data Processor contracts</li><li>Publish or update privacy notice with grievance officer contact</li></ul><h3>Before May 13, 2027 (full compliance) (2027-05-13)</h3><ul><li>Define Board notification workflow per Section 8(6)..</li><li>Define individual notification workflow..</li><li>Implement withdrawal at least as easy as consent per Section 6(4).</li><li>Define retention limits and erasure triggers per Rule 5.</li><li>Link withdrawal to erasure per Section 6(4) and 8(4).</li><li>Appoint grievance officer per Section 8(9) and 14.</li><li>Publish notice with all Rule 3 elements.</li><li>Publish notice before or at point of consent.</li><li>Create breach playbook with roles and timelines.</li><li>Publish DPO or authorised contact per Section 8(9).</li><li>Implement reasonable safeguards per Section 8(5) and Rule 12..</li><li>Appoint and publish grievance officer per Section 14.</li><li>Implement logging with one-year retention per Rule 12..</li><li>Publish verification method per Rule 8/9.</li><li>Establish process for Section 11 access rights.</li><li>Implement Section 12 correction mechanism.</li><li>Implement Section 13 erasure mechanism.</li><li>Set timelines not exceeding 90 days for grievances.</li><li>Implement 48-hour notice before Third Schedule deletion.</li></ul>
+
+  <div class="page-break"></div>
+  <h2>Obligation assessment</h2>
+  <h2 class="category">Security &amp; breach</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Breach notification to Data Protection Board</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(6) · Rule 13 · Deadline: 2027-05-13</p>
+          <p>Notify Board without undue delay; detailed report within 72 hours.</p>
+          <p><strong>Assessment:</strong> No Board breach notification process.</p>
+          <p><strong>Recommended action:</strong> Define Board notification workflow per Section 8(6)..</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"e inserted; and (c) in section 87, in sub-section (2), clause (ob) shall be omitted. (3) In section 8 of the Right to Information Act, 2005, in sub-section (1), for clause (j), the following clause shall be substituted, namely:— “(j) information which relates to personal information;”. 21 of 2000. 27 of 2008. 21 of 2000. 39 of 1970. 22 of 2005. [Page 21] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINA..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Breach notification to affected Data Principals</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(6) · Rule 13 · Deadline: 2027-05-13</p>
+          <p>Inform affected individuals in clear language about breach, impact, and remedial steps.</p>
+          <p><strong>Assessment:</strong> No Data Principal breach notification process.</p>
+          <p><strong>Recommended action:</strong> Define individual notification workflow..</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"e inserted; and (c) in section 87, in sub-section (2), clause (ob) shall be omitted. (3) In section 8 of the Right to Information Act, 2005, in sub-section (1), for clause (j), the following clause shall be substituted, namely:— “(j) information which relates to personal information;”. 21 of 2000. 27 of 2008. 21 of 2000. 39 of 1970. 22 of 2005. [Page 21] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINA..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Notice &amp; consent</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Consent withdrawal as easy as giving consent</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 6(4) · Rule 3, Rule 4 · Deadline: 2027-05-13</p>
+          <p>Withdrawal mechanism at least as accessible as consent; downstream processors notified.</p>
+          <p><strong>Assessment:</strong> No consent withdrawal mechanism.</p>
+          <p><strong>Recommended action:</strong> Implement withdrawal at least as easy as consent per Section 6(4).</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data quality &amp; lifecycle</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Data retention limits and erasure when purpose ends</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(4), Section 12 · Rule 5, Third Schedule · Deadline: 2027-05-13</p>
+          <p>Erase data when purpose served, consent withdrawn, or erasure requested; follow Third Schedule timelines.</p>
+          <p><strong>Assessment:</strong> No retention or erasure policy.</p>
+          <p><strong>Recommended action:</strong> Define retention limits and erasure triggers per Rule 5.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Deletion upon consent withdrawal</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 6(4), Section 8(4) · Rule 4, Rule 5 · Deadline: 2027-05-13</p>
+          <p>Cease processing and erase data within reasonable time after consent withdrawal.</p>
+          <p><strong>Assessment:</strong> No process to delete data on consent withdrawal.</p>
+          <p><strong>Recommended action:</strong> Link withdrawal to erasure per Section 6(4) and 8(4).</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Transparency &amp; contact</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Grievance officer appointed and contact published</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(9), Section 14 · Rule 9 · Deadline: 2027-05-13</p>
+          <p>Grievance redressal system published on website/app.</p>
+          <p><strong>Assessment:</strong> No grievance officer appointed.</p>
+          <p><strong>Recommended action:</strong> Appoint grievance officer per Section 8(9) and 14.</p>
+          
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Notice &amp; consent</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Notice contains all required elements (Rule 3)</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 5 · Rule 3 · Deadline: 2027-05-13</p>
+          <p>Notice must include specific data, purposes, goods/services provided, withdrawal, rights, and Board complaint route.</p>
+          <p><strong>Assessment:</strong> No privacy notice to assess.</p>
+          <p><strong>Recommended action:</strong> Publish notice with all Rule 3 elements.</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"of sub-rule (1) of rule 26, rules 27, 29, 30 and 40 to 43 -C of the Central Civil Services (Leave) Rules, 1972 (hereinafter referred to as “Leave Rules”). (3) Leave shall be subject to the conditions applicable to a Government servant under rules 7 to 11 and 22 to 25 of the Leave Rules, and the Central Government may, if satisfied that the operation of any of the said rules causes undue hardshi..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Notice to Data Principal before consent</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 5 · Rule 3 · Deadline: 2027-05-13</p>
+          <p>Clear notice covering data collected, purpose, rights, grievance contact, and withdrawal.</p>
+          <p><strong>Assessment:</strong> No privacy notice published.</p>
+          <p><strong>Recommended action:</strong> Publish notice before or at point of consent.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"aw her consent to the Data Fiduciary through a Consent Manager. (8) The Consent Manager shall be accountable to the Data Principal and shall act on her behalf in such manner and subject to such obligations as may be prescribed. (9) Every Consent Manager shall be registered with the Board in such manner and subject to such technical, operational, financial and other conditions as may be prescrib..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Security &amp; breach</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Personal data breach response plan</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(6) · Rule 13 · Deadline: 2027-05-13</p>
+          <p>Documented plan for detecting, containing, and responding to breaches.</p>
+          <p><strong>Assessment:</strong> No breach response plan.</p>
+          <p><strong>Recommended action:</strong> Create breach playbook with roles and timelines.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"e inserted; and (c) in section 87, in sub-section (2), clause (ob) shall be omitted. (3) In section 8 of the Right to Information Act, 2005, in sub-section (1), for clause (j), the following clause shall be substituted, namely:— “(j) information which relates to personal information;”. 21 of 2000. 27 of 2008. 21 of 2000. 39 of 1970. 22 of 2005. [Page 21] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINA..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Transparency &amp; contact</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Publication of business contact / DPO details</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(9) · Rule 9, Rule 14 · Deadline: 2027-05-13</p>
+          <p>Display contact of DPO or authorised person on website/app for data processing queries.</p>
+          <p><strong>Assessment:</strong> Business contact not published.</p>
+          <p><strong>Recommended action:</strong> Publish DPO or authorised contact per Section 8(9).</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"to be affected thereby, before the expiry of the period of forty -five days from the date on which copies of the Official Gazette containing the said notification were made available to public; And whereas copies of the said Official Gazette were made available to the public on the 3rd January, 2025; And whereas objections and suggestions were received from the public in respect of the said dra..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Security &amp; breach</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Reasonable security safeguards</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(5) · Rule 12 · Deadline: 2027-05-13</p>
+          <p>Encryption, access controls, logging, backups, and organisational measures.</p>
+          <p><strong>Assessment:</strong> Insufficient security safeguards.</p>
+          <p><strong>Recommended action:</strong> Implement reasonable safeguards per Section 8(5) and Rule 12..</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data Principal rights</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Right of grievance redressal</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 14 · Rule 9 · Deadline: 2027-05-13</p>
+          <p>Grievance mechanism responding within reasonable time (Rules: up to 90 days).</p>
+          <p><strong>Assessment:</strong> No grievance redressal mechanism.</p>
+          <p><strong>Recommended action:</strong> Appoint and publish grievance officer per Section 14.</p>
+          
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Notice &amp; consent</h2>
+
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Consent is free, specific, informed, and unambiguous</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 6(1) · Rule 4 · Deadline: 2027-05-13</p>
+          <p>Consent obtained through clear affirmative action; not bundled or implied.</p>
+          <p><strong>Assessment:</strong> Explicit affirmative consent reported.</p>
+          <p><strong>Recommended action:</strong> Avoid pre-ticked boxes; keep consent separate from T&amp;C.</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Lawful processing</h2>
+
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Lawful basis — valid consent for processing</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 4, Section 6 · Rule 3, Rule 4 · Deadline: 2027-05-13</p>
+          <p>Personal data processed only for lawful purpose with free, specific, informed, unambiguous consent.</p>
+          <p><strong>Assessment:</strong> Explicit opt-in consent mechanism in place.</p>
+          <p><strong>Recommended action:</strong> Maintain consent records and purpose-specific notices.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"instruments under sub-section (1) of section 23; (u) the terms and conditions of appointment and service of officers and employees of the Board under section 24; (v) the techno-legal measures to be adopted by the Board under sub-section (1) of section 28; (w) the other matters under clause (d) of sub-section (7) of section 28; (x) the form, manner and fee for filing an appeal under sub-section ..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Processing of digital personal data within scope</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 3 ·  · Deadline: 2027-05-13</p>
+          <p>Act applies to digital personal data processed in India or offered goods/services to persons in India.</p>
+          <p><strong>Assessment:</strong> Digital personal data processing confirmed.</p>
+          <p><strong>Recommended action:</strong> Maintain inventory of all digital data flows.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"rescribed. CHAPTER III R IGHTS AND DUTIES OF DATA PRINCIPAL 11. (1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously given consent, including consent as referred to in clause ( a) of section 7 (hereinafter referred to as the said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be prescribed,—..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Purpose limitation</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 4(1), Section 6(1) · Rule 3 · Deadline: 2027-05-13</p>
+          <p>Data processed only for purpose consented to or permitted under legitimate use.</p>
+          <p><strong>Assessment:</strong> Processing purposes documented for all data collected.</p>
+          <p><strong>Recommended action:</strong> Review when adding new data types or uses.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Children&#x27;s data</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>No behavioural tracking or targeted advertising to children</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 9 · Rule 10 · Deadline: 2027-05-13</p>
+          <p>Prohibition on tracking, behavioural monitoring, or targeted ads directed at children.</p>
+          <p><strong>Assessment:</strong> Children&#x27;s data not collected..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Verifiable parental/guardian consent for children</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 9 · Rule 10, Fourth Schedule · Deadline: 2027-05-13</p>
+          <p>Verifiable consent before processing personal data of children under 18.</p>
+          <p><strong>Assessment:</strong> Children&#x27;s data not collected..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"instruments under sub-section (1) of section 23; (u) the terms and conditions of appointment and service of officers and employees of the Board under section 24; (v) the techno-legal measures to be adopted by the Board under sub-section (1) of section 28; (w) the other matters under clause (d) of sub-section (7) of section 28; (x) the form, manner and fee for filing an appeal under sub-section ..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Security &amp; breach</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Access logging and one-year log retention</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(5) · Rule 12 · Deadline: 2027-05-13</p>
+          <p>Logs retained for at least one year to detect unauthorised access.</p>
+          <p><strong>Assessment:</strong> No access/activity logging.</p>
+          <p><strong>Recommended action:</strong> Implement logging with one-year retention per Rule 12..</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data Principal rights</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Identity verification for rights requests</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 11, Section 12, Section 13 · Rule 8, Rule 9 · Deadline: 2027-05-13</p>
+          <p>Published method and identifiers required to verify Data Principal before fulfilling requests.</p>
+          <p><strong>Assessment:</strong> No identity verification for rights requests.</p>
+          <p><strong>Recommended action:</strong> Publish verification method per Rule 8/9.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"instruments under sub-section (1) of section 23; (u) the terms and conditions of appointment and service of officers and employees of the Board under section 24; (v) the techno-legal measures to be adopted by the Board under sub-section (1) of section 28; (w) the other matters under clause (d) of sub-section (7) of section 28; (x) the form, manner and fee for filing an appeal under sub-section ..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Right of access — summary of personal data and processing</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 11 · Rule 8, Rule 9 · Deadline: 2027-05-13</p>
+          <p>Data Principal may obtain summary of personal data and processing activities.</p>
+          <p><strong>Assessment:</strong> No access request process.</p>
+          <p><strong>Recommended action:</strong> Establish process for Section 11 access rights.</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"rescribed. CHAPTER III R IGHTS AND DUTIES OF DATA PRINCIPAL 11. (1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously given consent, including consent as referred to in clause ( a) of section 7 (hereinafter referred to as the said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be prescribed,—..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Right of correction and updating of personal data</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 12 · Rule 8 · Deadline: 2027-05-13</p>
+          <p>Process to correct inaccurate or misleading personal data.</p>
+          <p><strong>Assessment:</strong> No correction process.</p>
+          <p><strong>Recommended action:</strong> Implement Section 12 correction mechanism.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"rescribed. CHAPTER III R IGHTS AND DUTIES OF DATA PRINCIPAL 11. (1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously given consent, including consent as referred to in clause ( a) of section 7 (hereinafter referred to as the said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be prescribed,—..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Right of erasure</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 13 · Rule 8 · Deadline: 2027-05-13</p>
+          <p>Process to erase personal data when consent withdrawn or no longer necessary.</p>
+          <p><strong>Assessment:</strong> No erasure process.</p>
+          <p><strong>Recommended action:</strong> Implement Section 13 erasure mechanism.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Rights requests handled within reasonable timelines</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 11, Section 12, Section 13, Section 14 · Rule 8, Rule 9 · Deadline: 2027-05-13</p>
+          <p>Documented timelines for access, correction, erasure, and grievance responses.</p>
+          <p><strong>Assessment:</strong> No defined timelines for rights requests.</p>
+          <p><strong>Recommended action:</strong> Set timelines not exceeding 90 days for grievances.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Notice &amp; consent</h2>
+
+        <div class="obligation" style="border-left-color:#e6a700">
+          <div class="ob-header">
+            <h3>Consent Manager provisions readiness</h3>
+            <span class="badge" style="background:#e6a700">Partially met</span>
+          </div>
+          <p class="refs">Section 6(9) · Rule 4 · Deadline: 2026-11-13</p>
+          <p>Consent Manager framework effective Nov 2026; assess integration if applicable.</p>
+          <p><strong>Assessment:</strong> Consent Manager provisions not yet assessed.</p>
+          <p><strong>Recommended action:</strong> Review Rule 4 and Section 6(9) before Nov 13, 2026.</p>
+          
+            <blockquote>
+              <p>"ain a website or app, or both, as the primary means through which a Data Principal may access the services provided by the Consent Manager. 6. The Consent Manager shall not sub -contract or assign the performance of any of its obligations under the Act and these rules. 7. The Consent Manager shall take reasonable security safeguards to prevent personal data breach. 8. The Consent Manager shall ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"ion, the Board may make such inquiry as it may deem fit to satisfy itself regarding fulfilment of the conditions set out in Part A of First Schedule, and if it— (a) is satisfied, register the applicant as a Consent Manager, under intimation to the applicant, and publish on its website the particulars of such Consent Manager; or (b) is not satisfied, reject the application and communicate the re..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Consent records maintained</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 6 · Rule 4 · Deadline: 2027-05-13</p>
+          <p>Ability to demonstrate when and how consent was given.</p>
+          <p><strong>Assessment:</strong> Consent records maintained.</p>
+          <p><strong>Recommended action:</strong> Retain records demonstrating consent scope and timing.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Employment &amp; special cases</h2>
+
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Employee personal data safeguards</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 7(c), Section 8 · Rule 5 · Deadline: 2027-05-13</p>
+          <p>Safeguards for employee data processed under legitimate use for employment purposes.</p>
+          <p><strong>Assessment:</strong> Employee data safeguards in place.</p>
+          <p><strong>Recommended action:</strong> Apply notice and security to employee data.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data quality &amp; lifecycle</h2>
+
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Reasonable efforts to ensure data accuracy and completeness</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 8(3) ·  · Deadline: 2027-05-13</p>
+          <p>Data Fiduciary must make reasonable efforts to ensure personal data is accurate and complete.</p>
+          <p><strong>Assessment:</strong> Data accuracy measures in place.</p>
+          <p><strong>Recommended action:</strong> Periodic review of critical data fields.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Employment &amp; special cases</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>CCTV / video surveillance compliance</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 4, Section 5, Section 7 · Rule 3 · Deadline: 2027-05-13</p>
+          <p>Notice and lawful basis for CCTV footage capturing identifiable individuals.</p>
+          <p><strong>Assessment:</strong> No CCTV / video surveillance reported..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Processors &amp; transfers</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Cross-border transfer compliance</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 16 · Rule 15 · Deadline: 2027-05-13</p>
+          <p>Transfers only to countries not restricted by Central Government notification.</p>
+          <p><strong>Assessment:</strong> No cross-border transfer reported..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Lawful processing</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Lawful basis — legitimate uses (if relied upon)</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 7 · Rule 5 · Deadline: 2027-05-13</p>
+          <p>Certain processing permitted without consent (voluntary provision, state functions, employment, emergencies).</p>
+          <p><strong>Assessment:</strong> Processing appears consent-based only.</p>
+          <p><strong>Recommended action:</strong> Reassess if any processing qualifies under Section 7..</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Processors &amp; transfers</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Oversight and monitoring of Data Processors</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 8(2) · Rule 6, Rule 12 · Deadline: 2027-05-13</p>
+          <p>Reasonable steps to ensure processors comply with security and processing obligations.</p>
+          <p><strong>Assessment:</strong> No Data Processors reported..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Written contract with Data Processors</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 8(2) · Rule 6 · Deadline: 2027-05-13</p>
+          <p>Contract specifying purpose, security obligations, and deletion requirements.</p>
+          <p><strong>Assessment:</strong> No Data Processors reported..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"rescribed. CHAPTER III R IGHTS AND DUTIES OF DATA PRINCIPAL 11. (1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously given consent, including consent as referred to in clause ( a) of section 7 (hereinafter referred to as the said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be prescribed,—..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data quality &amp; lifecycle</h2>
+
+        <div class="obligation" style="border-left-color:#b00020">
+          <div class="ob-header">
+            <h3>Pre-erasure notification to Data Principal (48 hours)</h3>
+            <span class="badge" style="background:#b00020">Not met</span>
+          </div>
+          <p class="refs">Section 8(7) · Rule 5 · Deadline: 2027-05-13</p>
+          <p>Notify Data Principal at least 48 hours before deletion under Third Schedule unless they act to continue purpose.</p>
+          <p><strong>Assessment:</strong> No process for pre-erasure notification.</p>
+          <p><strong>Recommended action:</strong> Implement 48-hour notice before Third Schedule deletion.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"rescribed. CHAPTER III R IGHTS AND DUTIES OF DATA PRINCIPAL 11. (1) The Data Principal shall have the right to obtain from the Data Fiduciary to whom she has previously given consent, including consent as referred to in clause ( a) of section 7 (hereinafter referred to as the said Data Fiduciary), for processing of personal data, upon making to it a request in such manner as may be prescribed,—..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Data Principal rights</h2>
+
+        <div class="obligation" style="border-left-color:#2e7d32">
+          <div class="ob-header">
+            <h3>Right of nomination</h3>
+            <span class="badge" style="background:#2e7d32">Met</span>
+          </div>
+          <p class="refs">Section 15 · Rule 9 · Deadline: 2027-05-13</p>
+          <p>Data Principal may nominate another individual to exercise rights in event of death or incapacity.</p>
+          <p><strong>Assessment:</strong> Nomination right supported.</p>
+          <p><strong>Recommended action:</strong> Publish how Data Principals can nominate.</p>
+          
+            <blockquote>
+              <p>"data under sub-section ( 3) of section 12; (o) the period within which the Data Fiduciary shall respond to any grievances under sub-section (2) of section 13; Consistency with other laws. Bar of jurisdiction. Power to make rules. [Page 19] SEC. 1] THE GAZETTE OF INDIA EXTRAORDINARY 19 (p) the manner of nomination of any other individual by the Data Principal under sub-section (1) of section 14;..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div><h2 class="category">Significant Data Fiduciary</h2>
+
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Annual data protection audit (if SDF)</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 10 · Rule 11 · Deadline: 2027-05-13</p>
+          <p>SDF must have annual audit by independent auditor.</p>
+          <p><strong>Assessment:</strong> SDF obligations apply only if designated by government..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Data Protection Impact Assessment (if SDF)</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 10 · Rule 11 · Deadline: 2027-05-13</p>
+          <p>SDF must conduct periodic DPIA for processing with risk to Data Principals.</p>
+          <p><strong>Assessment:</strong> SDF obligations apply only if designated by government..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"under sub-section (2) of section 5; (c) the manner of accountability and the obligations of Consent Manager under sub-section (8) of section 6; (d) the manner of registration of Consent Manager and the conditions relating thereto, under sub-section ( 9) of section 6; (e) the subsidy, benefit, service, certificate, licence or permit for the provision or issuance of which, personal data may be pr..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Data Protection Officer appointment (if SDF)</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 10 · Rule 11, Rule 14 · Deadline: 2027-05-13</p>
+          <p>SDF must appoint DPO based in India with prescribed qualifications.</p>
+          <p><strong>Assessment:</strong> SDF obligations apply only if designated by government..</p>
+          <p><strong>Recommended action:</strong> No action required unless practices change.</p>
+          
+            <blockquote>
+              <p>"[Page 1] 1 Summary - Digital Personal Data Protection Rules, 2025 The Ministry of Electronics and Information Technology (MeitY) notified the Digital Personal Data Protection Rules, 2025 (DPDP Rules) on November 13 th, 2025. The rules were framed under the Digital Personal Data Protection Act, 2023 (DPDPA) and are now operationalising India’s first data governance legislation in a phased manner..."</p>
+              <small>Source: dsci rules index 2025 — <a href="http://localhost:8000/api/v1/sources/dsci_rules_index_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"e entitled to encashment of earned leave standing to her credit, subject to such conditions and in like manner as are applicable to a Government servant under rule 38-A, sub-rules (1) and (2) and sub-clauses (i) and (ii) of clause (a) of sub-rule (6) of rule 39, rule 39-A and rule 39 -C of the Leave Rules, subject to the maximum extent of encashment under any of the said rules, other than rule ..."</p>
+              <small>Source: dpdp rules 2025 — <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+        <div class="obligation" style="border-left-color:#666">
+          <div class="ob-header">
+            <h3>Significant Data Fiduciary (SDF) designation assessment</h3>
+            <span class="badge" style="background:#666">Not applicable</span>
+          </div>
+          <p class="refs">Section 10 · Rule 11 · Deadline: 2027-05-13</p>
+          <p>Assess whether government may designate you as SDF based on volume, sensitivity, and risk.</p>
+          <p><strong>Assessment:</strong> Unlikely SDF based on reported scale and sensitivity.</p>
+          <p><strong>Recommended action:</strong> Reassess if volume or risk profile increases..</p>
+          
+            <blockquote>
+              <p>"[Page 1] 1 Summary - Digital Personal Data Protection Rules, 2025 The Ministry of Electronics and Information Technology (MeitY) notified the Digital Personal Data Protection Rules, 2025 (DPDP Rules) on November 13 th, 2025. The rules were framed under the Digital Personal Data Protection Act, 2023 (DPDPA) and are now operationalising India’s first data governance legislation in a phased manner..."</p>
+              <small>Source: dsci rules index 2025 — <a href="http://localhost:8000/api/v1/sources/dsci_rules_index_2025/download">Download PDF</a></small>
+            </blockquote>
+            <blockquote>
+              <p>"sub-section ( 1) of section 9; (j) the classes of Data Fiduciaries, the purposes of processing of personal data of a child and the conditions relating thereto, under sub-section ( 4 ) of section 9; (k) the other matters comprising the process of Data Protection Impact Assessment under sub-clause ( i) of clause (c) of sub-section ( 2) of section 10; (l) the other measures that the Significant Da..."</p>
+              <small>Source: dpdp act 2023 — <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a></small>
+            </blockquote>
+        </div>
+
+  <div class="page-break"></div>
+  <h2>Legal source documents</h2>
+  <p>Download and verify the primary legal texts referenced in this report.</p>
+  <ul>
+        <li>
+          <strong>Digital Personal Data Protection Act, 2023</strong> (primary)<br/>
+          <small>Ministry of Electronics and IT (MeitY), Government of India</small><br/>
+          <a href="http://localhost:8000/api/v1/sources/dpdp_act_2023/download">Download PDF</a> ·
+          <a href="https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf">Official link</a>
+        </li>
+        <li>
+          <strong>Digital Personal Data Protection Rules, 2025</strong> (primary)<br/>
+          <small>Ministry of Electronics and IT (MeitY), Government of India</small><br/>
+          <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025/download">Download PDF</a> ·
+          <a href="https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf">Official link</a>
+        </li>
+        <li>
+          <strong>DPDP Rules 2025 (English text mirror)</strong> (primary)<br/>
+          <small>dpdpa.com (mirror of notified Rules)</small><br/>
+          <a href="http://localhost:8000/api/v1/sources/dpdp_rules_2025_mirror/download">Download PDF</a> ·
+          <a href="https://www.dpdpa.com/DPDP_Rules_2025_English_only.pdf">Official link</a>
+        </li>
+        <li>
+          <strong>PIB Press Release — DPDP Rules 2025 Notification</strong> (primary)<br/>
+          <small>Press Information Bureau, Government of India</small><br/>
+          <a href="http://localhost:8000/api/v1/sources/pib_rules_summary_2025/download">Download PDF</a> ·
+          <a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf">Official link</a>
+        </li>
+        <li>
+          <strong>DSCI — DPDP Rules 2025 (Rule-to-Section Index)</strong> (secondary)<br/>
+          <small>Data Security Council of India (DSCI)</small><br/>
+          <a href="http://localhost:8000/api/v1/sources/dsci_rules_index_2025/download">Download PDF</a> ·
+          <a href="https://www.dsci.in/files/content/documents/2025/Digital-Personal-Data-Protection-Rules-2025.pdf">Official link</a>
+        </li></ul>
+
+  <p class="disclaimer">This report is automated compliance guidance based on your questionnaire answers and the DPDP Act 2023 / DPDP Rules 2025. It is not legal advice. Download and verify the cited source documents below. Consult qualified counsel before relying on this report for regulatory decisions.</p>
+</body>
+</html>

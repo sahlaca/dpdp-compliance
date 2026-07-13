@@ -1,0 +1,114 @@
+@page {
+  size: A4;
+  margin: 2cm 1.8cm 2.2cm 1.8cm;
+  @bottom-center {
+    content: "DPDP Compliance Guidance Generator — Phase 1 Overview  ·  Page " counter(page);
+    font-size: 8pt;
+    color: #64748b;
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #0f172a;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 22pt;
+  color: #1e3a8a;
+  border-bottom: 3px solid #1e40af;
+  padding-bottom: 0.4rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 14pt;
+  color: #1e40af;
+  margin-top: 1.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.3rem;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 11pt;
+  color: #334155;
+  page-break-after: avoid;
+}
+
+#TOC {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+#TOC ul { padding-left: 1.2rem; }
+#TOC a { color: #1d4ed8; text-decoration: none; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+}
+
+th {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+}
+
+tr:nth-child(even) td { background: #fafbfc; }
+
+pre, code {
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 8.5pt;
+  background: #f1f5f9;
+}
+
+pre {
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #3b82f6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  page-break-inside: avoid;
+}
+
+blockquote {
+  border-left: 3px solid #94a3b8;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: #475569;
+  font-style: italic;
+  background: #f8fafc;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+strong { color: #0f172a; }
+
+p { margin: 0.5rem 0 0.75rem; }
+
+ul, ol { margin: 0.5rem 0 1rem; }
+
+.cover-meta {
+  font-size: 11pt;
+  color: #64748b;
+  margin-bottom: 2rem;
+}

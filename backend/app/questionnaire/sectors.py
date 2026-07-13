@@ -1,0 +1,27 @@
+"""Industry sectors for business profiling."""
+
+SECTORS: list[dict[str, str]] = [
+    {"value": "hospitality", "label": "Hospitality (hotel, resort, homestay, guesthouse)"},
+    {"value": "retail", "label": "Retail & e-commerce"},
+    {"value": "healthcare", "label": "Healthcare (clinic, hospital, diagnostics)"},
+    {"value": "d2c", "label": "D2C / consumer brand"},
+    {"value": "food_beverage", "label": "Food & beverage (restaurant, café, cloud kitchen)"},
+    {"value": "travel_tourism", "label": "Travel & tourism (agency, tour operator)"},
+    {"value": "fintech", "label": "Fintech & financial services"},
+    {"value": "insurance", "label": "Insurance"},
+    {"value": "education", "label": "Education & edtech"},
+    {"value": "real_estate", "label": "Real estate & property management"},
+    {"value": "logistics", "label": "Logistics, delivery & transport"},
+    {"value": "manufacturing", "label": "Manufacturing & industrial"},
+    {"value": "it_saas", "label": "IT, software & SaaS"},
+    {"value": "professional_services", "label": "Professional services (consulting, legal, CA)"},
+    {"value": "media_entertainment", "label": "Media, entertainment & events"},
+    {"value": "automotive", "label": "Automotive (dealership, service)"},
+    {"value": "telecom", "label": "Telecom & internet services"},
+    {"value": "agriculture", "label": "Agriculture & agritech"},
+    {"value": "nonprofit", "label": "Non-profit / NGO"},
+    {"value": "staffing", "label": "Staffing & HR services"},
+    {"value": "beauty_wellness", "label": "Beauty, spa & wellness"},
+    {"value": "fitness", "label": "Fitness & sports"},
+    {"value": "other", "label": "Other"},
+]

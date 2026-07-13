@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.npm/
+
+# Data — corpus is regenerated via: python backend/scripts/ingest_corpus.py
+data/corpus/*
+!data/corpus/.gitkeep
+
+# Source PDFs ARE tracked (~5 MB) so clones work without re-downloading.
+# To refresh: python backend/scripts/download_sources.py
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Docker (no local overrides with secrets)
+docker-compose.override.yml

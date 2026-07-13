@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: dpdp-postgres
+    environment:
+      POSTGRES_USER: dpdp
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required — copy .env.example to .env}
+      POSTGRES_DB: dpdp
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dpdp -d dpdp"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    networks:
+      - dpdp-net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dpdp-backend
+    environment:
+      DATA_DIR: /app/data
+      FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost:8888}
+      DATABASE_URL: postgresql+psycopg2://dpdp:${POSTGRES_PASSWORD}@postgres:5432/dpdp
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required — copy .env.example to .env}
+    volumes:
+      - ./data:/app/data:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - dpdp-net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: dpdp-frontend
+    ports:
+      - "${HOST_PORT:-8888}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - dpdp-net
+
+networks:
+  dpdp-net:
+    driver: bridge
+
+volumes:
+  postgres_data:

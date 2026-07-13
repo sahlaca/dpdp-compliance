@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DPDP Compliance Guidance Generator — Phase 1 Overview</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="export_style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">DPDP Compliance Guidance Generator — Phase 1 Overview</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dpdp-compliance-guidance-generator">DPDP Compliance Guidance Generator</a>
+<ul>
+<li><a href="#phase-1-project-overview-technical-documentation">Phase 1 — Project Overview &amp; Technical Documentation</a></li>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#executive-summary">1. Executive summary</a></li>
+<li><a href="#problem-statement">2. Problem statement</a></li>
+<li><a href="#solution-overview">3. Solution overview</a></li>
+<li><a href="#end-to-end-user-workflow">4. End-to-end user workflow</a></li>
+<li><a href="#system-architecture">5. System architecture</a></li>
+<li><a href="#technical-workflow-backend-processing">6. Technical workflow (backend processing)</a></li>
+<li><a href="#regulatory-context">7. Regulatory context</a></li>
+<li><a href="#product-scope">8. Product scope</a></li>
+<li><a href="#target-users-and-sectors">9. Target users and sectors</a></li>
+<li><a href="#questionnaire-and-obligation-engine">10. Questionnaire and obligation engine</a></li>
+<li><a href="#legal-knowledge-base">11. Legal knowledge base</a></li>
+<li><a href="#report-output">12. Report output</a></li>
+<li><a href="#technology-stack">13. Technology stack</a></li>
+<li><a href="#deployment-model">14. Deployment model</a></li>
+<li><a href="#security-and-privacy">15. Security and privacy</a></li>
+<li><a href="#limitations-and-disclaimers">16. Limitations and disclaimers</a></li>
+<li><a href="#product-roadmap">17. Product roadmap</a></li>
+<li><a href="#document-information">Document information</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dpdp-compliance-guidance-generator">DPDP Compliance Guidance Generator</h1>
+<h2 id="phase-1-project-overview-technical-documentation">Phase 1 — Project Overview &amp; Technical Documentation</h2>
+<p><strong>Product:</strong> DPDP Compliance Guidance Generator<br />
+<strong>Version:</strong> 1.0 (Phase 1 MVP)<br />
+<strong>Document type:</strong> Executive &amp; technical overview<br />
+<strong>Date:</strong> July 2026<br />
+<strong>Classification:</strong> For external sharing</p>
+<hr />
+<h2 id="table-of-contents">Table of contents</h2>
+<ol type="1">
+<li>Executive summary<br />
+</li>
+<li>Problem statement<br />
+</li>
+<li>Solution overview<br />
+</li>
+<li>End-to-end user workflow<br />
+</li>
+<li>System architecture<br />
+</li>
+<li>Technical workflow (backend processing)<br />
+</li>
+<li>Regulatory context<br />
+</li>
+<li>Product scope<br />
+</li>
+<li>Target users and sectors<br />
+</li>
+<li>Questionnaire and obligation engine<br />
+</li>
+<li>Legal knowledge base<br />
+</li>
+<li>Report output<br />
+</li>
+<li>Technology stack<br />
+</li>
+<li>Deployment model<br />
+</li>
+<li>Security and privacy<br />
+</li>
+<li>Limitations and disclaimers<br />
+</li>
+<li>Product roadmap</li>
+</ol>
+<hr />
+<h2 id="executive-summary">1. Executive summary</h2>
+<p>The <strong>DPDP Compliance Guidance Generator</strong> is a web application that helps Indian small and medium enterprises (SMEs) understand their obligations under the <strong>Digital Personal Data Protection Act, 2023</strong> and <strong>DPDP Rules, 2025</strong>.</p>
+<p>A business completes a structured questionnaire about its data practices and receives a <strong>personalized compliance gap report</strong> — identifying which obligations apply, where gaps exist, and a prioritized action plan aligned to regulatory deadlines (November 2026 and May 2027).</p>
+<p>The system uses <strong>deterministic rule-based scoring</strong> grounded in official legal source documents that users can download and verify. Compliance status is <strong>not</strong> decided by an AI language model, ensuring reproducible and auditable results.</p>
+<hr />
+<h2 id="problem-statement">2. Problem statement</h2>
+<h3 id="the-problem">The problem</h3>
+<p>Indian businesses — particularly SMEs in hospitality, retail, healthcare, D2C, and related sectors — are subject to the DPDP Act and Rules, with a hard compliance deadline of <strong>May 13, 2027</strong>. However:</p>
+<ul>
+<li>Most are <strong>unaware</strong> the law applies to them<br />
+</li>
+<li>Even when aware, they lack <strong>legal expertise, time, or budget</strong> to interpret dense legal text<br />
+</li>
+<li>Generic blog content does not tell them what <strong>they specifically</strong> need to do<br />
+</li>
+<li>Hiring lawyers or consultants is <strong>expensive and slow</strong> relative to business scale<br />
+</li>
+<li>Doing nothing exposes them to <strong>penalties and breach risk</strong></li>
+</ul>
+<h3 id="what-phase-1-solves">What Phase 1 solves</h3>
+<p>A business answers a structured questionnaire and receives a <strong>personalized, legally-grounded compliance gap report</strong> — without reading the Act themselves or hiring a consultant for initial orientation.</p>
+<h3 id="success-criterion">Success criterion</h3>
+<p>A business owner with <strong>zero prior DPDP awareness</strong> (e.g. a hotel operator) can, in a few minutes, understand:</p>
+<ul>
+<li>What applies to them<br />
+</li>
+<li>Where they fall short today<br />
+</li>
+<li>What to fix first and by when</li>
+</ul>
+<h3 id="phase-1-vs-phase-2">Phase 1 vs Phase 2</h3>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Question answered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phase 1</strong> (this product)</td>
+<td><em>What do I need to do and why?</em></td>
+</tr>
+<tr class="even">
+<td><strong>Phase 2</strong> (planned)</td>
+<td><em>How do I actually do it every day?</em> (consent management, data inventory, breach workflows)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="solution-overview">3. Solution overview</h2>
+<p>The application combines three layers:</p>
+<ol type="1">
+<li><strong>Structured intake</strong> — 33 questions across 9 sections about data practices<br />
+</li>
+<li><strong>Rules engine</strong> — 39 DPDP obligations scored as Met / Partially met / Not met / Not applicable<br />
+</li>
+<li><strong>Legal grounding</strong> — Official Act and Rules PDFs with keyword-based citation retrieval</li>
+</ol>
+<p><strong>Design principle:</strong> Scoring is deterministic and auditable. Legal PDFs are the source of truth. Users can download sources to verify any recommendation.</p>
+<hr />
+<h2 id="end-to-end-user-workflow">4. End-to-end user workflow</h2>
+<p>This is the complete journey from a business user’s perspective:</p>
+<pre><code>┌──────────────┐    ┌─────────────────┐    ┌──────────────────┐    ┌─────────────┐
+│  1. Open app │───▶│ 2. Review legal │───▶│ 3. Complete      │───▶│ 4. Generate │
+│              │    │    sources      │    │  questionnaire   │    │    report   │
+└──────────────┘    │  (sidebar)      │    │  (33 questions)  │    └──────┬──────┘
+                    └─────────────────┘    └──────────────────┘           │
+                                                                          ▼
+                    ┌─────────────────┐    ┌──────────────────┐    ┌─────────────┐
+                    │ 7. Download PDF │◀───│ 6. Review gaps,  │◀───│ 5. View on- │
+                    │    report       │    │  action plan,    │    │  screen     │
+                    └─────────────────┘    │  citations       │    │  summary    │
+                                           └──────────────────┘    └─────────────┘</code></pre>
+<h3 id="step-by-step">Step-by-step</h3>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 36%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>User action</th>
+<th>System response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Opens the web application</td>
+<td>Landing page with legal sources sidebar</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Optionally downloads source PDFs</td>
+<td>Official DPDP Act, Rules, and reference documents</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Enters company name, sector, answers questionnaire</td>
+<td>Questions grouped by topic (data collection, consent, security, etc.)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Clicks “Generate gap report”</td>
+<td>Backend scores all 39 obligations</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Reviews on-screen report</td>
+<td>Summary, timeline, action plan, obligation details with citations</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Verifies citations against source PDFs</td>
+<td>Download links per obligation</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Downloads PDF report</td>
+<td>Professional PDF for printing, email, or internal sharing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Typical duration:</strong> 15–25 minutes for a first-time user.</p>
+<hr />
+<h2 id="system-architecture">5. System architecture</h2>
+<h3 id="high-level-architecture-diagram">High-level architecture diagram</h3>
+<pre><code>                    ┌─────────────────────────────────────────┐
+                    │           USER BROWSER                   │
+                    │  ┌─────────────────────────────────────┐ │
+                    │  │     React Web Application           │ │
+                    │  │  • Questionnaire wizard             │ │
+                    │  │  • Report viewer                    │ │
+                    │  │  • Legal sources sidebar            │ │
+                    │  └──────────────┬──────────────────────┘ │
+                    └─────────────────┼────────────────────────┘
+                                      │ HTTPS
+                                      ▼
+                    ┌─────────────────────────────────────────┐
+                    │              NGINX                       │
+                    │  • Serves React static files             │
+                    │  • Proxies /api/* to backend             │
+                    └──────────────┬──────────────────────────┘
+                                   │
+                    ┌──────────────▼──────────────────────────┐
+                    │         FASTAPI BACKEND                  │
+                    │  ┌────────────┐  ┌────────────────────┐ │
+                    │  │ API Layer  │  │ Questionnaire      │ │
+                    │  └─────┬──────┘  │ Module             │ │
+                    │        │         └────────────────────┘ │
+                    │        ▼                                  │
+                    │  ┌────────────┐  ┌────────────────────┐ │
+                    │  │ Rules      │  │ Report Generator   │ │
+                    │  │ Engine     │──│ + PDF Export       │ │
+                    │  │(39 rules)  │  └────────────────────┘ │
+                    │  └─────┬──────┘                          │
+                    │        ▼                                  │
+                    │  ┌────────────┐                          │
+                    │  │ Keyword    │                          │
+                    │  │ Retrieval  │                          │
+                    │  └─────┬──────┘                          │
+                    └────────┼────────────────────────────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+        ┌──────────┐ ┌──────────┐ ┌──────────────┐
+        │ Source   │ │ Text     │ │ Source       │
+        │ PDFs     │ │ Corpus   │ │ Manifest     │
+        │(Act,     │ │(search-  │ │(metadata)    │
+        │ Rules)   │ │ able)    │ │              │
+        └──────────┘ └──────────┘ └──────────────┘</code></pre>
+<h3 id="component-responsibilities">Component responsibilities</h3>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>React frontend</strong></td>
+<td>Questionnaire wizard, report view, legal sources sidebar, PDF download</td>
+</tr>
+<tr class="even">
+<td><strong>nginx</strong></td>
+<td>Single entry point; serves UI and proxies API requests</td>
+</tr>
+<tr class="odd">
+<td><strong>FastAPI backend</strong></td>
+<td>REST API, request validation, orchestration</td>
+</tr>
+<tr class="even">
+<td><strong>Rules engine</strong></td>
+<td>Maps questionnaire answers to obligation statuses (deterministic)</td>
+</tr>
+<tr class="odd">
+<td><strong>Retrieval layer</strong></td>
+<td>Keyword search over legal text corpus for citations</td>
+</tr>
+<tr class="even">
+<td><strong>PDF export</strong></td>
+<td>Professional gap report generation</td>
+</tr>
+<tr class="odd">
+<td><strong>Legal data store</strong></td>
+<td>Official DPDP Act and Rules PDFs with metadata catalog</td>
+</tr>
+</tbody>
+</table>
+<h3 id="deployment-topology-docker">Deployment topology (Docker)</h3>
+<pre><code>┌──────────────── docker compose ────────────────┐
+│                                                 │
+│  ┌─────────────────┐    ┌──────────────────┐  │
+│  │ Frontend        │    │ Backend          │  │
+│  │ (nginx + React) │───▶│ (FastAPI)        │  │
+│  │ Port: 8888      │    │ Port: 8000       │  │
+│  └─────────────────┘    └────────┬─────────┘  │
+│                                 │             │
+│                        ┌────────▼─────────┐  │
+│                        │ Legal data volume │  │
+│                        │ (PDFs + corpus)   │  │
+│                        └──────────────────┘  │
+└─────────────────────────────────────────────────┘</code></pre>
+<hr />
+<h2 id="technical-workflow-backend-processing">6. Technical workflow (backend processing)</h2>
+<p>When a user submits the questionnaire, the following processing occurs:</p>
+<pre><code>INPUT: company_name, sector, answers{33 fields}
+                │
+                ▼
+┌───────────────────────────────────┐
+│ 1. VALIDATE submission (schema)   │
+└───────────────┬───────────────────┘
+                ▼
+┌───────────────────────────────────┐
+│ 2. RULES ENGINE                     │
+│    For each of 39 obligations:    │
+│    • Check applicability          │
+│    • score_obligation(answers)      │
+│    • → status, gap, action          │
+└───────────────┬───────────────────┘
+                ▼
+┌───────────────────────────────────┐
+│ 3. CITATION RETRIEVAL             │
+│    For each obligation:           │
+│    • Build search query           │
+│    • Keyword match in corpus      │
+│    • Attach top legal excerpts    │
+└───────────────┬───────────────────┘
+                ▼
+┌───────────────────────────────────┐
+│ 4. REPORT ASSEMBLY                │
+│    • Summary statistics           │
+│    • Regulatory timeline          │
+│    • Prioritized action plan      │
+│    • Obligations by category      │
+│    • Legal source references      │
+└───────────────┬───────────────────┘
+                ▼
+OUTPUT: JSON report → Screen display / PDF download</code></pre>
+<h3 id="scoring-approach">Scoring approach</h3>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 32%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Used for</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Rule-based logic</strong></td>
+<td>Met / Partial / Not met decisions</td>
+<td>Reproducible, auditable, no hallucination</td>
+</tr>
+<tr class="even">
+<td><strong>Keyword retrieval</strong></td>
+<td>Legal excerpts and citations</td>
+<td>Grounded in actual Act/Rules text</td>
+</tr>
+<tr class="odd">
+<td><strong>LLM (not used)</strong></td>
+<td>—</td>
+<td>Avoided for compliance decisions in Phase 1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="regulatory-context">7. Regulatory context</h2>
+<h3 id="dpdp-act-2023">DPDP Act, 2023</h3>
+<p>India’s standalone data protection law (Act No. 22 of 2023), published August 11, 2023.</p>
+<p><strong>Key roles:</strong></p>
+<ul>
+<li><strong>Data Principal</strong> — individual whose data is processed<br />
+</li>
+<li><strong>Data Fiduciary</strong> — entity deciding purpose and means of processing<br />
+</li>
+<li><strong>Data Processor</strong> — processes on fiduciary’s behalf<br />
+</li>
+<li><strong>Significant Data Fiduciary (SDF)</strong> — designated by government for enhanced obligations</li>
+</ul>
+<h3 id="dpdp-rules-2025">DPDP Rules, 2025</h3>
+<p>Notified November 13, 2025 (G.S.R. 846(E)).</p>
+<h3 id="implementation-timeline">Implementation timeline</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Effective date</th>
+<th>What kicks in</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phase I</td>
+<td>Nov 13, 2025</td>
+<td>Data Protection Board established</td>
+</tr>
+<tr class="even">
+<td>Phase II</td>
+<td>Nov 13, 2026</td>
+<td>Consent Manager provisions</td>
+</tr>
+<tr class="odd">
+<td>Phase III</td>
+<td><strong>May 13, 2027</strong></td>
+<td>All substantive compliance obligations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="primary-legal-sources-embedded-in-application">Primary legal sources (embedded in application)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Document</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DPDP Act, 2023 (MeitY)</td>
+<td>Primary legal text</td>
+</tr>
+<tr class="even">
+<td>DPDP Rules, 2025 (G.S.R. 846(E))</td>
+<td>Operational rules</td>
+</tr>
+<tr class="odd">
+<td>PIB notification summary</td>
+<td>Implementation timeline</td>
+</tr>
+<tr class="even">
+<td>DSCI Rule-to-Section index</td>
+<td>Cross-reference</td>
+</tr>
+<tr class="odd">
+<td>DLA Piper India guide</td>
+<td>Secondary interpretation reference</td>
+</tr>
+</tbody>
+</table>
+<p>All primary sources are downloadable from within the application for instant verification.</p>
+<hr />
+<h2 id="product-scope">8. Product scope</h2>
+<h3 id="in-scope-phase-1">In scope (Phase 1)</h3>
+<ul>
+<li>Structured questionnaire (33 questions, 9 sections)<br />
+</li>
+<li>Assessment of <strong>39 Data Fiduciary obligations</strong><br />
+</li>
+<li>Status per obligation: Met / Partially met / Not met / Not applicable<br />
+</li>
+<li>Keyword-based legal excerpt retrieval for citations<br />
+</li>
+<li>Downloadable primary source PDFs from the application<br />
+</li>
+<li>Prioritized action plan (Nov 2026 vs May 2027 deadlines)<br />
+</li>
+<li>Professional PDF gap report download<br />
+</li>
+<li>Containerized deployment for demos and pilots</li>
+</ul>
+<h3 id="out-of-scope-phase-1">Out of scope (Phase 1)</h3>
+<ul>
+<li>AI/LLM-based compliance decisions<br />
+</li>
+<li>Drafting legal documents (privacy policies, DPAs)<br />
+</li>
+<li>Ongoing consent management or monitoring<br />
+</li>
+<li>Integration with customer systems (CRM, PMS, website)<br />
+</li>
+<li>Multi-tenant SaaS with user accounts<br />
+</li>
+<li>Certified legal opinions</li>
+</ul>
+<hr />
+<h2 id="target-users-and-sectors">9. Target users and sectors</h2>
+<h3 id="users">Users</h3>
+<table>
+<thead>
+<tr class="header">
+<th>User</th>
+<th>Need</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SME business owner</td>
+<td>Understand DPDP applicability and gaps quickly</td>
+</tr>
+<tr class="even">
+<td>Operations / IT manager</td>
+<td>Actionable checklist before May 2027</td>
+</tr>
+<tr class="odd">
+<td>Internal compliance champion</td>
+<td>Structured starting point</td>
+</tr>
+<tr class="even">
+<td>CEO / leadership</td>
+<td>Executive summary for decision-making</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supported-sectors-23">Supported sectors (23)</h3>
+<p>Hospitality, retail, healthcare, D2C, food &amp; beverage, travel, fintech, insurance, education, real estate, logistics, manufacturing, IT/SaaS, professional services, media, automotive, telecom, agriculture, nonprofit, staffing, beauty/wellness, fitness, and other.</p>
+<hr />
+<h2 id="questionnaire-and-obligation-engine">10. Questionnaire and obligation engine</h2>
+<h3 id="questionnaire-sections-9">Questionnaire sections (9)</h3>
+<ol type="1">
+<li>Business profile<br />
+</li>
+<li>Data collection<br />
+</li>
+<li>Notice &amp; consent<br />
+</li>
+<li>Data lifecycle<br />
+</li>
+<li>Data Principal rights<br />
+</li>
+<li>Transparency &amp; contact<br />
+</li>
+<li>Processors &amp; transfers<br />
+</li>
+<li>Security &amp; breach<br />
+</li>
+<li>Employment &amp; Significant Data Fiduciary</li>
+</ol>
+<h3 id="obligation-categories-39-total">Obligation categories (39 total)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Count</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lawful processing</td>
+<td>4</td>
+<td>Consent, legitimate use, purpose limitation</td>
+</tr>
+<tr class="even">
+<td>Notice &amp; consent</td>
+<td>6</td>
+<td>Rule 3 notice, consent records, withdrawal</td>
+</tr>
+<tr class="odd">
+<td>Data quality &amp; lifecycle</td>
+<td>4</td>
+<td>Accuracy, retention, erasure</td>
+</tr>
+<tr class="even">
+<td>Data Principal rights</td>
+<td>6</td>
+<td>Access, correction, erasure, grievance</td>
+</tr>
+<tr class="odd">
+<td>Transparency &amp; contact</td>
+<td>2</td>
+<td>DPO contact, grievance officer</td>
+</tr>
+<tr class="even">
+<td>Processors &amp; transfers</td>
+<td>3</td>
+<td>Contracts, oversight, cross-border</td>
+</tr>
+<tr class="odd">
+<td>Security &amp; breach</td>
+<td>5</td>
+<td>Safeguards, logging, breach notification</td>
+</tr>
+<tr class="even">
+<td>Children’s data</td>
+<td>2</td>
+<td>Verifiable consent, no tracking</td>
+</tr>
+<tr class="odd">
+<td>SDF / special cases</td>
+<td>7</td>
+<td>SDF assessment, employee data, CCTV</td>
+</tr>
+</tbody>
+</table>
+<h3 id="status-definitions">Status definitions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Met</strong></td>
+<td>Reported practice satisfies obligation</td>
+</tr>
+<tr class="even">
+<td><strong>Partially met</strong></td>
+<td>Some elements present; gaps remain</td>
+</tr>
+<tr class="odd">
+<td><strong>Not met</strong></td>
+<td>Material gap; action required</td>
+</tr>
+<tr class="even">
+<td><strong>Not applicable</strong></td>
+<td>Does not apply based on answers</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="legal-knowledge-base">11. Legal knowledge base</h2>
+<h3 id="how-legal-grounding-works">How legal grounding works</h3>
+<ol type="1">
+<li>Official DPDP Act and Rules PDFs are stored in the application<br />
+</li>
+<li>Text is extracted and split into searchable segments<br />
+</li>
+<li>When scoring an obligation, relevant segments are retrieved by keyword matching<br />
+</li>
+<li>Excerpts are attached to the report with links to download the full source PDF</li>
+</ol>
+<h3 id="why-this-matters-for-trust">Why this matters for trust</h3>
+<p>Users can verify every recommendation against the original legal text — critical for a compliance product aimed at businesses without in-house legal teams.</p>
+<hr />
+<h2 id="report-output">12. Report output</h2>
+<h3 id="on-screen-report-includes">On-screen report includes</h3>
+<ul>
+<li>Executive summary (obligations assessed, gaps found, critical gaps)<br />
+</li>
+<li>Regulatory timeline with key dates<br />
+</li>
+<li>Prioritized action plan (before Nov 2026 / before May 2027)<br />
+</li>
+<li>Detailed obligation assessment grouped by category<br />
+</li>
+<li>Legal excerpts with source download links</li>
+</ul>
+<h3 id="pdf-report-includes">PDF report includes</h3>
+<ul>
+<li>Professional cover page (company name, sector, IST timestamp)<br />
+</li>
+<li>Page numbers<br />
+</li>
+<li>Print-ready layout for sharing with stakeholders<br />
+</li>
+<li>Full disclaimer</li>
+</ul>
+<hr />
+<h2 id="technology-stack">13. Technology stack</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frontend</td>
+<td>React 18, TypeScript, Vite</td>
+</tr>
+<tr class="even">
+<td>API server</td>
+<td>Python 3.11, FastAPI, Uvicorn</td>
+</tr>
+<tr class="odd">
+<td>Scoring</td>
+<td>Deterministic Python rules engine</td>
+</tr>
+<tr class="even">
+<td>Legal retrieval</td>
+<td>Keyword search over indexed corpus</td>
+</tr>
+<tr class="odd">
+<td>PDF generation</td>
+<td>WeasyPrint</td>
+</tr>
+<tr class="even">
+<td>Reverse proxy</td>
+<td>nginx</td>
+</tr>
+<tr class="odd">
+<td>Packaging</td>
+<td>Docker, Docker Compose</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deployment-model">14. Deployment model</h2>
+<p>The application runs as two containerized services:</p>
+<ul>
+<li><strong>Frontend container</strong> — nginx serving the React app on port 8888<br />
+</li>
+<li><strong>Backend container</strong> — FastAPI API with legal data volume mounted</li>
+</ul>
+<p>Single URL access for demos and presentations. Suitable for on-premise pilot, private cloud, or internal network deployment.</p>
+<hr />
+<h2 id="security-and-privacy">15. Security and privacy</h2>
+<ul>
+<li>Stateless API — no questionnaire data persisted to database in v1<br />
+</li>
+<li>Legal source PDFs mounted read-only<br />
+</li>
+<li>No authentication in v1 — intended for private/demo deployment<br />
+</li>
+<li>CORS restricted to application origin<br />
+</li>
+<li>Suitable for deployment behind corporate VPN or private network</li>
+</ul>
+<hr />
+<h2 id="limitations-and-disclaimers">16. Limitations and disclaimers</h2>
+<h3 id="limitations">Limitations</h3>
+<ol type="1">
+<li><strong>Self-reported answers</strong> — report accuracy depends on honest input<br />
+</li>
+<li><strong>Rule-based interpretation</strong> — not a substitute for qualified legal counsel<br />
+</li>
+<li><strong>Keyword citations</strong> — excerpts support verification but should be cross-checked<br />
+</li>
+<li><strong>Sector selection</strong> — labels the business; scoring logic is largely sector-agnostic in v1<br />
+</li>
+<li><strong>SDF status</strong> — heuristic assessment only; government designates Significant Data Fiduciaries</li>
+</ol>
+<h3 id="disclaimer">Disclaimer</h3>
+<blockquote>
+<p>This report is automated compliance guidance based on questionnaire answers and the DPDP Act 2023 / DPDP Rules 2025. It is not legal advice. Download and verify the cited source documents. Consult qualified counsel before relying on this report for regulatory decisions.</p>
+</blockquote>
+<hr />
+<h2 id="product-roadmap">17. Product roadmap</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Capability</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phase 1</strong></td>
+<td>Gap assessment + action plan + PDF report</td>
+<td>Complete</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 2a</strong></td>
+<td>Auto-draft privacy notices, DPAs, consent copy</td>
+<td>Planned</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 2b</strong></td>
+<td>Consent management, data inventory, rights workflows</td>
+<td>Planned</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 3</strong></td>
+<td>Full compliance operating system with integrations</td>
+<td>Planned</td>
+</tr>
+</tbody>
+</table>
+<p>Phase 1 questionnaire data is structured to seed Phase 2 without requiring businesses to re-enter information.</p>
+<hr />
+<h2 id="document-information">Document information</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Title</td>
+<td>DPDP Compliance Guidance Generator — Phase 1 Overview</td>
+</tr>
+<tr class="even">
+<td>Version</td>
+<td>1.0</td>
+</tr>
+<tr class="odd">
+<td>Date</td>
+<td>July 2026</td>
+</tr>
+<tr class="even">
+<td>Purpose</td>
+<td>Executive and technical sharing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>End of document</em></p>
+</body>
+</html>

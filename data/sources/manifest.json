@@ -1,0 +1,86 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-11-13",
+  "sources": [
+    {
+      "id": "dpdp_act_2023",
+      "title": "Digital Personal Data Protection Act, 2023",
+      "type": "primary",
+      "filename": "dpdp_act_2023.pdf",
+      "official_url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
+      "publisher": "Ministry of Electronics and IT (MeitY), Government of India",
+      "description": "India's standalone data protection law establishing rights of Data Principals and obligations of Data Fiduciaries.",
+      "gazette_reference": "Act No. 22 of 2023",
+      "effective_date": "2023-08-11"
+    },
+    {
+      "id": "dpdp_rules_2025",
+      "title": "Digital Personal Data Protection Rules, 2025",
+      "type": "primary",
+      "filename": "dpdp_rules_2025.pdf",
+      "official_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+      "publisher": "Ministry of Electronics and IT (MeitY), Government of India",
+      "description": "Final notified Rules operationalising the DPDP Act, including consent, security, breach notification, and children's data provisions.",
+      "gazette_reference": "G.S.R. 846(E), dated 13 November 2025",
+      "effective_date": "2025-11-13"
+    },
+    {
+      "id": "dpdp_rules_2025_mirror",
+      "title": "DPDP Rules 2025 (English text mirror)",
+      "type": "primary",
+      "filename": "dpdp_rules_2025_mirror.pdf",
+      "official_url": "https://www.dpdpa.com/DPDP_Rules_2025_English_only.pdf",
+      "publisher": "dpdpa.com (mirror of notified Rules)",
+      "description": "Clean English-only mirror of the notified DPDP Rules 2025 for easier reading and search.",
+      "gazette_reference": "G.S.R. 846(E)",
+      "effective_date": "2025-11-13"
+    },
+    {
+      "id": "pib_rules_summary_2025",
+      "title": "PIB Press Release — DPDP Rules 2025 Notification",
+      "type": "primary",
+      "filename": "pib_rules_summary_2025.pdf",
+      "official_url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251117695301.pdf",
+      "publisher": "Press Information Bureau, Government of India",
+      "description": "Official government summary of the notified Rules and phased implementation timeline.",
+      "effective_date": "2025-11-13"
+    },
+    {
+      "id": "dsci_rules_index_2025",
+      "title": "DSCI — DPDP Rules 2025 (Rule-to-Section Index)",
+      "type": "secondary",
+      "filename": "dsci_rules_index_2025.pdf",
+      "official_url": "https://www.dsci.in/files/content/documents/2025/Digital-Personal-Data-Protection-Rules-2025.pdf",
+      "publisher": "Data Security Council of India (DSCI)",
+      "description": "Structured summary mapping each Rule to its corresponding Act Section — useful cross-reference index.",
+      "effective_date": "2025-11-13"
+    },
+    {
+      "id": "dla_piper_guide_india",
+      "title": "DLA Piper — Data Protection Laws of the World (India)",
+      "type": "secondary",
+      "filename": "dla_piper_guide_india.pdf",
+      "official_url": "https://www.dlapiperdataprotection.com/guide.pdf?c=IN",
+      "publisher": "DLA Piper",
+      "description": "Authoritative law-firm guide to India's data protection framework for cross-checking interpretation.",
+      "effective_date": "2025"
+    }
+  ],
+  "implementation_phases": [
+    {
+      "phase": "Phase I",
+      "effective_date": "2025-11-13",
+      "description": "Data Protection Board of India established"
+    },
+    {
+      "phase": "Phase II",
+      "effective_date": "2026-11-13",
+      "description": "Consent Manager provisions become effective"
+    },
+    {
+      "phase": "Phase III",
+      "effective_date": "2027-05-13",
+      "description": "All other substantive compliance obligations become effective"
+    }
+  ]
+}
